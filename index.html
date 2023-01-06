@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+
+
+<title>My Weather Channel</title>
+
+<!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging whena phone is turned sideways-->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<!-- *************** LOAD A GOOGLE FONT ****************** -->
+<link href="https://fonts.googleapis.com/css?family=Lato:100,400,700" rel="stylesheet">
+
+<!-- STYLE SHEETS -->
+<link href="styles.css" rel="stylesheet">
+
+<!-- removes the browser interface -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+
+<meta name="apple-mobile-web-app-title" content="Weather">
+
+
+<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+<![endif]-->
+     
+</head>
+<body>
+	<div id="wrapper">
+		<header>
+			<figure class="wu"><img src="images/weatherLogo.png"></figure>
+			<h1>My Weather Channel</h1>
+			<h2>Data from Open Weather Map API</h2>
+		</header>
+    
+   
+    
+    
+<!-- page content here -->
+		<main>
+			<section id="left">
+				<div id="location">New York, NY</div>
+				<div id="weather">Current Conditions</div>
+				<div id="temperature"></div>
+				<div id="feel">Feels like: </div>
+				<div class="flex">
+					<div id="uvi">UV Index: </div>
+					<div id="desc">Wind: </div>
+					<div id="sunrise">Sunrise @ </div>
+					<div id="sunset">Sunset @ </div>
+					<div id="ppt">Precipitation: </div>
+					<div id="visibility">Visibility: </div>
+				</div>
+			</section>
+
+			<section id="right">
+				<header><h2>Weekly Forecast</h2></header>
+				<div class="dayContainer">
+					<span>Date</span>
+					<span> <img id="r1c2" ></span>
+					<span>Minimum</span>
+					<span>Maximum</span>
+				</div>	
+			</section>
+			
+			
+			
+			
+			
+			
+			
+		</main><!-- end content -->
+    
+    
+		<footer>
+		<!-- <p>&bull;Paul Cheney &bull; Pluralsight Practice File</p> -->
+		</footer>
+    
+	</div> <!-- end wrapper -->
+</body>
+	<script type="text/javascript" src="index.js"></script>
+</html>
